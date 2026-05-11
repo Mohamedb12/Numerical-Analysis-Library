@@ -152,13 +152,13 @@ System.out.println("Interpolated Y at X=" + targetX + " is: " + solver.interpola
 ## 📂 Project Structure
 ```text
 Numerical-Analysis-Library/
-├── core/                  # Base interfaces (Integrator, RootFinder, EquationFunction, dEquationFunction)
+├── core/                  # Base interfaces (Integrator, RootFinder, EquationFunction, dEquationFunction, Interpolator)
 ├── methods/               
+│   ├── interpolation/     # LagrangeMethod
 │   ├── integration/       # TrapezoidalMethod, SimpsonOneThirdMethod, SimpsonThreeEighthsMethod
 │   ├── bracketing/        # BisectionMethod, FalsePositionMethod
 │   └── iterative/         # NewtonRaphsonMethod, FixedPointMethod
 └── Main.java              # Testing entry point
-```
 
 
 ## 🛠️ Installation
