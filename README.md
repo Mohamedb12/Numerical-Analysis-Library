@@ -7,7 +7,7 @@ In modern engineering and science, mathematical equations are often too complex 
 
 ---
 
-## 🚀 How to Use (Detailed Examples)
+##  How to Use (Detailed Examples)
 
 Below are the implementation examples for every method included in the library.
 
@@ -130,7 +130,22 @@ Integrator solver = new SimpsonThreeEighthsMethod(0, 2, 12);
 System.out.println("Area using Simpson 3/8 = " + solver.integrate(f));
 ```
 
----
+### 3. Interpolation Methods (Data Fitting)
+
+#### A. Lagrange Polynomial Interpolation
+This method is used to find the estimated value of `y` for a given `x`, based on a set of known data points `(x, y)`.
+
+```java
+// Define the known data points (x and y arrays must have the same length)
+double[] knownXValues = {0, 1, 2, 3};
+double[] knownYValues = {1, 2, 1, 10};
+
+// Initialize the solver with the data points
+Interpolator solver = new LagrangeMethod(knownXValues, knownYValues);
+
+// Find the interpolated value at a specific target X (e.g., 1.5)
+double targetX = 1.5;
+System.out.println("Interpolated Y at X=" + targetX + " is: " + solver.interpolate(targetX));
 
 ## 📂 Project Structure
 ```text
@@ -142,6 +157,7 @@ Numerical-Analysis-Library/
 │   └── iterative/         # NewtonRaphsonMethod, FixedPointMethod
 └── Main.java              # Testing entry point
 ```
+---
 
 ## 🛠️ Installation
 1. Clone the repository:
@@ -156,5 +172,5 @@ Numerical-Analysis-Library/
 ---
 
 ## 👨‍💻 About the Author
-Developed by **Mohammed**, a Computer Science student at the Faculty of Science, Assiut University (Department of Mathematics).
+Developed by **Mohammed Attia**, a Computer Science student at the Faculty of Science, Assiut University (Department of Mathematics).
 
