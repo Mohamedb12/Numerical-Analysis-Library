@@ -130,7 +130,7 @@ Integrator solver = new SimpsonThreeEighthsMethod(0, 2, 12);
 System.out.println("Area using Simpson 3/8 = " + solver.integrate(f));
 ```
 
-### 3. Interpolation Methods (Data Fitting)
+### 3. Interpolation Methods
 
 #### A. Lagrange Polynomial Interpolation
 This method is used to find the estimated value of `y` for a given `x`, based on a set of known data points `(x, y)`.
