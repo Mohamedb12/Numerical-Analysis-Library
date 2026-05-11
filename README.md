@@ -146,6 +146,7 @@ Interpolator solver = new LagrangeMethod(knownXValues, knownYValues);
 // Find the interpolated value at a specific target X (e.g., 1.5)
 double targetX = 1.5;
 System.out.println("Interpolated Y at X=" + targetX + " is: " + solver.interpolate(targetX));
+```
 ---
 
 ## 📂 Project Structure
