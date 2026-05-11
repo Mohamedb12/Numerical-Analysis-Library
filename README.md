@@ -160,7 +160,7 @@ Numerical-Analysis-Library/
 │   └── iterative/         # NewtonRaphsonMethod, FixedPointMethod
 └── Main.java              # Testing entry point
 
-
+```
 ## 🛠️ Installation
 1. Clone the repository:
    ```bash
